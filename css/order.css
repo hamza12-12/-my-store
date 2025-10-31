@@ -1,0 +1,176 @@
+/* تنسيق صفحة الطلبات */
+.order-section {
+    padding: 100px 5% 50px;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.order-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.order-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.order-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.order-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.order-form {
+    padding: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.order-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.order-form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.order-form small {
+    display: block;
+    margin-top: 0.25rem;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.order-form .form-control {
+    background: #f8f9fa;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.order-form .form-control:focus {
+    border-color: var(--secondary-color);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.order-form textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-outline:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+/* تنسيق خاص للخدمات */
+.service-preview {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.service-preview h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.service-price-preview {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* تحسينات للشكل العام */
+.order-form-container .alert {
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+.order-form-container .alert-error {
+    background: #fee;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    border-radius: 8px;
+}
+
+/* تأثيرات التفاعل */
+.form-control:invalid {
+    border-color: #e74c3c;
+}
+
+.form-control:valid {
+    border-color: #27ae60;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .order-section {
+        padding: 80px 2% 30px;
+    }
+    
+    .order-form {
+        padding: 1.5rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn-lg {
+        width: 100%;
+    }
+}
